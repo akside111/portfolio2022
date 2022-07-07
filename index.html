@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaeyeon's Portfolio</title>
-    <meta name="description" content="Portfolio for Jaeyeon">
-    <meta name="author" content="Jaeyeon">
-
+    <meta name="description" content="jaeyeon's portfolio">
+    <meta name="author" content="jaeyeon">
+    
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="imgs/favicon-01.png">
+    <link rel="icon" type="image/png" href="imgs/favicon.png">
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/d8678d0338.js" crossorigin="anonymous"></script>
     <!-- fonts -->
@@ -18,202 +18,222 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- script -->
-    <script src="./js/main.js" defer></script>
-</head>
-<body>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav id="navbar">
-        <div class="navbar__logo">
-            <img src="./imgs/favicon-01.png" alt="logo">
-            <a href="#">Jaeyeon</a>
-        </div>
-        <div class="navbar_menu">
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skills</li>
-                <li class="navbar__menu__item">Work</li>
-                <li class="navbar__menu__item">Testimonials</li>
-                <li class="navbar__menu__item">Contact</li>
-            </ul>
-        </div>
+      <div class="navbar__logo">
+        <img src="imgs/favicon.png" alt="logo">
+        <a href="#">Jaeyeon</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item active">Home</li>
+        <li class="navbar__menu__item">About</li>
+        <li class="navbar__menu__item">Skills</li>
+        <li class="navbar__menu__item">Work</li>
+        <li class="navbar__menu__item">Contact</li> 
+      </ul>
+
+      <!-- Toggle button -->
+      <button class="navbar__toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
+    <!-- //Navbar -->
+
     <!-- Home -->
-    <section id="home">
-        <img src="./imgs/profile.png" alt="profile photo" class="home__avatar">
+    <secton id="home">
+      <div class="home__container">
+        <img src="imgs/profile.png" alt="profile photo" class="home__avatar">
         <h1 class="home__title">Hello, <br />I'm Lin Jaeyeon</h1>
-        <h2 class="home__description">A novice Web Publisher</h2>
-        <button class="home__contact">Contact Me</button>
-    </section>
+        <h2 class="home__description">A Web Publisher</h2>
+        <button class="home__contact">Contact Me</button>  
+      </div>
+    </secton>
+    <!-- //Home -->
+
     <!-- About -->
-    <section id="about">
-        <h1>About me</h1>
-        <p></p>
-        <div class="about__majors">
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-html5"></i>
-                </div>
-                <div class="major__title">HTML</div>
-                <div class="major__description">
-                    Markup conforming to Web Standards
-                </div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-css3"></i>
-                </div>
-                <div class="major__title">CSS</div>
-                <div class="major__description">
-                    Responsive Layout using CSS
-                </div>
-            </div>
-            <div class="major">
-                <div class="major__icon">
-                    <i class="fa-brands fa-js-square"></i>
-                </div>
-                <div class="major__title">JavaScript</div>
-                <div class="major__description">
-                    Interacting with users via JavaScript
-                </div>
-            </div>
+    <section id="about" class="section section__container">
+      <h1>About Me</h1>
+      <div class="about__majors">
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h2 class="major__title">HTML</h2>
+          <div class="major__description">
+            Markup confirming to Web Standars
+          </div>
         </div>
-        <div class="about__jobs">
-            <div class="job">
-                <img src="./imgs/jobs/linecomputerart.png" alt="linecomputerart" class="job__logo">
-                <p class="job__name"></p>
-                <p class="job__period"></p>
-            </div>
-            <div class="job">
-                <img src="./imgs/jobs/metrotech.png" alt="metrotech" class="job__logo">
-                <p class="job__name"></p>
-                <p class="job__period"></p>
-            </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-css3"></i>
+          </div>
+          <h2 class="major__title">CSS</h2>
+          <div class="major__description">
+            Responsive Layout using CSS
+          </div>
         </div>
+        <div class="major">
+          <div class="major__icon">
+            <i class="fa-brands fa-js-square"></i>
+          </div>
+          <h2 class="major__title">JavaScript</h2>
+          <div class="major__description">
+            Interacting with users via JavaScript
+          </div>
+        </div>
+      </div>
+      <div class="about__jobs">
+        <div class="job">
+          <div class="job__logo">
+            <img src="./imgs/jobs/linecomputerart.png" alt="linecomputerart">
+          </div>
+          <div class="job__description">
+            <p class="job__name">Line Computer Art Academy</p>
+            <p class="job__period">2021.07.15 - 2021.12.12</p>
+          </div>
+        </div>
+        <div class="job">
+          <img src="./imgs/jobs/metrotech.png" alt="metrotech" class="job__logo">
+          <div class="job__description">
+            <p class="job__name">Metrotech Corp.</p>
+            <p class="job__period">2021.12.13 - 2022.06.30</p>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- //About -->
+
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
+      <div class="section__container">
         <h1>Skills</h1>
         <h2>Skills & Attributes</h2>
         <div class="skillset">
-            <div class="skillset__left">
-                <h3 class="skillset__title">Skills</h3>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>HTML</span>
-                        <span>90%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>CSS</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>JavaScript</span>
-                        <span>80%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <div class="skill__description">
-                        <span>Figma</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="skill__bar">
-                        <div class="skill__value"></div>
-                    </div>
-                </div>
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
             </div>
-            <div class="skillset__right">
-                <div class="tools">
-                    <h3 class="skillset__title">Tools</h3>
-                    <ul class="tools__list">
-                        <li><span>Visual Studio Code</span></li>
-                        <li><span>Figma</span></li>
-                        <li><span>Zeplin</span></li>
-                    </ul>
-                </div>
-                <div class="etc">
-                    <h3 class="skillset__title">Etc</h3>
-                    <ul class="etc__list">
-                        <li><span>Adobe Photoshop</span></li>
-                        <li><span>Adobe Illustrator</span></li>
-                    </ul>
-                </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>85%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 85%"></div>
+              </div>
             </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JavaScript</span>
+                <span>80%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skillset__right">
+            <div class="tools">
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Figma</span></li>
+                <li><span>Adobe Photoshop</span></li>
+                <li><span>Adobe Illustrator</span></li>
+              </h3>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Work -->
-    <section id="work">
-        <h1>My work</h1>
-        <h3>Projects</h3>
-        <div class="work__categories">
-            <button class="category__btn">
-                All<span class="category__count">8</span>
-            </button>
-            <button class="category__btn">
-                Web Standard Site<span class="category__count">3</span>
-            </button>
-            <button class="category__btn">
-                Responsive Web Site<span class="category__count">3</span>
-            </button>
-            <button class="category__btn">
-                CSS Animation<span class="category__count">2</span>
-            </button>
-        </div>
+    <!-- //Skills -->
 
-        <div class="work__projects">
-            <a href="#" class="project" target="_blank">
-                <img class="project__img" src="./imgs/projects/image 2.png" alt="desktop">
-                <div class="project__description">
-                    <h3>Web Standard Site</h3>
-                    <span>Web Standard Site With HTML and CSS</span>
-                </div>
-            </a>
-            <a href="#" class="project" target="_blank">
-                <img class="project__img" src="./imgs/projects/image 2.png" alt="desktop">
-                <div class="project__description">
-                    <h3>Web Standard Site</h3>
-                    <span>Web Standard Site With HTML and CSS</span>
-                </div>
-            </a>
-            <a href="#" class="project" target="_blank">
-                <img class="project__img" src="./imgs/projects/image 2.png" alt="desktop">
-                <div class="project__description">
-                    <h3>Web Standard Site</h3>
-                    <span>Web Standard Site With HTML and CSS</span>
-                </div>
-            </a>
-        </div>
+    <!-- Work -->
+    <section id="work" class="section section__container">
+      <h1>My Work</h1>
+      <h3>Projects</h3>
+      <div class="work__categories">
+        <button class="category__btn active">
+          All<span class="category__count">6</span>
+        </button>
+        <button class="category__btn">
+          Sites<span class="catebory__count">2</span>
+        </button>
+        <button class="category__btn">
+          Layouts<span class="catebory__count">2</span>
+        </button>
+        <button class="category__btn">
+          Effects<span class="catebory__count">2</span>
+        </button>
+      </div>
+
+      <div class="work__projects">
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+          <div class="project__description">
+            <h3>Web Standard Site</h3>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+          <div class="project__description">
+            <h3>Responsive Web Site</h3>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+          <div class="project__description">
+            <h3>Layouts - 01</h3>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+          <div class="project__description">
+            <h3>Layouts - 02</h3>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+          <div class="project__description">
+            <h3>Effects - JavaScript</h3>
+          </div>
+        </a>
+        <a href="#" class="project" target="_blank">
+          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+          <div class="project__description">
+            <h3>Effects - JQuery</h3>
+          </div>
+        </a>
+      </div>
     </section>
+    <!-- //Work -->
+
     <!-- Contact -->
-    <section id="contact">
-        <h1 class="contanct__title">Let's talk</h1>
+    <section id="contact" class="section">
+      <div class="section__container">
+        <h1 class="contact__title">Let's Talk</h1>
         <h2 class="contact__email">akside111@gmail.com</h2>
         <div class="contact__links">
-            <a href="#" target="_blank">
-                아이콘
-            </a>
-            <a href="#" target="_blank">
-                아이콘
-            </a>
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
         <p class="contact__rights">
-            2022 Lin Jaeyeon - All rights reserved
+          2022 LinJaeyeon - All rights reserved.
         </p>
+      </div>
     </section>
-</body>
+    <!-- //Contact -->
+  </body>
 </html>
