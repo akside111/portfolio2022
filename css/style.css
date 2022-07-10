@@ -123,9 +123,13 @@ p {
 }
 
 .navbar__logo img {
-  width: 25px;
+  width: 20px;
+  margin-right: 5px;
+}
+
+.navbar__logo a {
   position: relative;
-  top: 5px;
+  bottom: 5px;
 }
 
 .navbar__menu {
@@ -138,6 +142,10 @@ p {
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border-color: var(--color-white);
 }
 
 .navbar__menu__item:hover {
@@ -190,8 +198,8 @@ p {
 /* Section common */
 .section {
   padding: 50px;
+  padding-top: 100px;
   text-align: center;
-  
 }
 
 .section__container {
@@ -329,6 +337,7 @@ p {
   margin: 40px 0;
   justify-content: center;
 }
+
 .category__btn {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--size-border-radius);
@@ -348,7 +357,7 @@ p {
 .category__btn.active .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 4px;
+  top: 6px;
 }
 
 .category__count {
@@ -360,8 +369,8 @@ p {
   line-height: 24px;
   display: inline-block;
   position: absolute;
-  top: -10px;
-  right: 10px;
+  top: -12px;
+  right: 12px;
   opacity: 0;
   transition: all var(--animation-duration) ease-in;
 }
@@ -473,9 +482,21 @@ p {
   pointer-events: auto;
 }
 
+/* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
+    font-size: var(--font-medium);
   }
   
   #navbar {
@@ -499,17 +520,36 @@ p {
     display: block;
   }
 
+  .section {
+    padding: 16px;
+    padding-top: 50px;
+  }
+
   .about__majors {
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   .major {
-    margin-bottom: 38px;
+    margin-bottom: 30px;
+  }
+
+  .job {
+    padding-top: 30px;
+  }
+  
+  .job__logo {
+    width: 40%;
+  }
+  
+  .job__description {
+    width: 45%;
   }
 
   .job__logo,
   .job__description {
-    width: 30%;
+    width: 40%;
   }
 
   .skillset {
@@ -518,5 +558,14 @@ p {
 
   .project {
     flex-grow: 1;
+  }
+
+  .arrow-up {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    right: 16px;
+    bottom: 16px;
   }
 }
