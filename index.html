@@ -9,7 +9,7 @@
     <meta name="author" content="jaeyeon">
     
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="imgs/favicon.png">
+    <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
     <!-- fontawsome -->
     <script src="https://kit.fontawesome.com/d8678d0338.js" crossorigin="anonymous"></script>
     <!-- fonts -->
@@ -18,27 +18,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <!-- script -->
-    <script src="js/main.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
   </head>
   <body>
     <!-- Navbar -->
-    <nav id="navbar">
-      <div class="navbar__logo">
-        <img src="imgs/favicon.png" alt="logo">
+    <nav id="nav">
+      <div class="nav__logo">
+        <img src="assets/imgs/favicon.png" alt="logo">
         <a href="#">Jaeyeon</a>
       </div>
-      <ul class="navbar__menu">
-        <li class="navbar__menu__item active" data-link="#home">Home</li>
-        <li class="navbar__menu__item" data-link="#about">About</li>
-        <li class="navbar__menu__item" data-link="#skills">Skills</li>
-        <li class="navbar__menu__item" data-link="#work">Work</li>
-        <li class="navbar__menu__item" data-link="#contact">Contact</li> 
+      <ul class="nav__list">
+        <li class="nav__item active" data-link="#home">Home</li>
+        <li class="nav__item" data-link="#about">About</li>
+        <li class="nav__item" data-link="#skills">Skills</li>
+        <li class="nav__item" data-link="#work">Work</li>
+        <li class="nav__item" data-link="#contact">Contact</li> 
       </ul>
 
       <!-- Toggle button -->
-      <button class="navbar__toggle-btn">
+      <button class="nav__toggle-btn">
         <i class="fa-solid fa-bars"></i>
       </button>
     </nav>
@@ -48,7 +49,7 @@
     <secton id="home">
       <div class="home__container">
         <div class="home__inner">
-          <img src="imgs/profile.png" alt="profile photo" class="home__avatar">
+          <img src="assets/imgs/profile.png" alt="profile photo" class="home__avatar">
           <h1 class="home__title">Hello, <br />I'm Lin Jaeyeon</h1>
           <h2 class="home__description">A Web Publisher</h2>
           <button class="home__contact">Contact Me</button>  
@@ -92,7 +93,7 @@
       <div class="about__jobs">
         <div class="job">
           <div class="job__logo">
-            <img src="./imgs/jobs/linecomputerart.png" alt="linecomputerart">
+            <img src="./assets/imgs/jobs/linecomputerart.png" alt="linecomputerart">
           </div>
           <div class="job__description">
             <p class="job__name">Line Computer Art Academy</p>
@@ -100,7 +101,7 @@
           </div>
         </div>
         <div class="job">
-          <img src="./imgs/jobs/metrotech.png" alt="metrotech" class="job__logo">
+          <img src="./assets/imgs/jobs/metrotech.png" alt="metrotech" class="job__logo">
           <div class="job__description">
             <p class="job__name">Metrotech Corp.</p>
             <p class="job__period">2021.12.13 - 2022.06.30</p>
@@ -168,13 +169,13 @@
       <h3>Projects</h3>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All<span class="category__count">5</span>
+          All<span class="category__count">7</span>
         </button>
         <button class="category__btn" data-filter="layouts">
           Layouts<span class="category__count">1</span>
         </button>
         <button class="category__btn" data-filter="reference">
-          References<span class="category__count">2</span>
+          References<span class="category__count">4</span>
         </button>
         <button class="category__btn" data-filter="effects">
           Effects<span class="category__count">2</span>
@@ -182,32 +183,44 @@
       </div>
 
       <div class="work__projects">
-        <a href="#" class="project" target="_blank" data-type="layouts">
-          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+        <a href="layouts/index.html" class="project" target="_blank" data-type="layouts">
+          <img class="project__img" src="assets/imgs/projects/layouts.png" alt="layouts">
           <div class="project__description">
             <h3>Layouts</h3>
           </div>
         </a>
-        <a href="#" class="project" target="_blank" data-type="reference">
-          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+        <a href="reference/refer_html/index.html" class="project" target="_blank" data-type="reference">
+          <img class="project__img" src="assets/imgs/projects/refer_html.png" alt="">
           <div class="project__description">
-            <h3>References - JavaScript</h3>
+            <h3>Reference -<br />HTML</h3>
           </div>
         </a>
-        <a href="#" class="project" target="_blank" data-type="reference">
-          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+        <a href="reference/refer_css/index.html" class="project" target="_blank" data-type="reference">
+          <img class="project__img" src="assets/imgs/projects/refer_css.png" alt="">
           <div class="project__description">
-            <h3>References - JQuery</h3>
+            <h3>Reference -<br />CSS</h3>
           </div>
         </a>
-        <a href="#" class="project" target="_blank" data-type="effects">
-          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+        <a href="reference/refer_javascript/index.html" class="project" target="_blank" data-type="reference">
+          <img class="project__img" src="assets/imgs/projects/refer_javascript.png" alt="reference">
+          <div class="project__description">
+            <h3>Reference -<br />JavaScript</h3>
+          </div>
+        </a>
+        <a href="reference/refer_jquery/index.html" class="project" target="_blank" data-type="reference">
+          <img class="project__img" src="assets/imgs/projects/refer_jquery.png" alt="reference">
+          <div class="project__description">
+            <h3>Reference -<br />JQuery</h3>
+          </div>
+        </a>
+        <a href="effects/index_javascript.html" class="project" target="_blank" data-type="effects">
+          <img class="project__img" src="assets/imgs/projects/effect_javascript.png" alt="">
           <div class="project__description">
             <h3>Effects - JavaScript</h3>
           </div>
         </a>
-        <a href="#" class="project" target="_blank" data-type="effects">
-          <img class="project__img" src="imgs/projects/image 1.png" alt="">
+        <a href="effects/index_jquery.html" class="project" target="_blank" data-type="effects">
+          <img class="project__img" src="assets/imgs/projects/effect_jquery.png" alt="">
           <div class="project__description">
             <h3>Effects - JQuery</h3>
           </div>
@@ -237,5 +250,6 @@
     <button class="arrow-up">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
+    <!-- //Arrow up -->
   </body>
 </html>
